@@ -1,5 +1,6 @@
 package screen
 
+import LINE_DIVIDER
 import extensions.getNotEmptyString
 
 class ShoppingHome {
@@ -19,7 +20,7 @@ class ShoppingHome {
             
             감사합니다. 반갑습니다. $name 님
             원하시는 카테고리를 입력해주세요.
-            ***==============================***
+            $LINE_DIVIDER
         """.trimIndent()
         )  // .trimIndent()는 문자열 출력 시 자동으로 모든 입력 라인의 공통 최소 들여쓰기를 감지하고 모든 라인에서 그만큼 제거하는 기능
         // 다시 말해 현재 코드에 작성된 문자열은 앞에 띄어쓰기가 되어있는데 trimIndent()를 사용하지 않으면 출력시 문자열 앞이 띄어진 채로 출력됨

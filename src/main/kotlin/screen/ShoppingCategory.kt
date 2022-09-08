@@ -1,5 +1,6 @@
 package screen
 
+import LINE_DIVIDER
 import extensions.getNotEmptyString
 
 /*
@@ -15,7 +16,7 @@ class ShoppingCategory {
             print("          ")
             println(category)
         }
-        println("***=============================***")
+        println("$LINE_DIVIDER")
         println("==> 장바구니로 이동하시려면 #을 입력해주세요")
 
         val selectedCategory = readLine().getNotEmptyString()
@@ -34,7 +35,7 @@ class ShoppingCategory {
 
     private fun showErrorMesage(selectedCategory: String) {
         println("[$selectedCategory] : 존재하지 않는 카테고리입니다. 다시 입력해주세요.")
-        println("***=============================***")
+        println("$LINE_DIVIDER")
         showCategories()
     }
 }
