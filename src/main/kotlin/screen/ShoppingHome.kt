@@ -24,7 +24,7 @@ class ShoppingHome {
     }
 
     private fun showCategories() {
-       val shoppingCategory = ShoppingCategory()  // 쇼핑카테고리의 인스턴스 생성
+        val shoppingCategory = ShoppingCategory()  // 쇼핑카테고리의 인스턴스 생성
         shoppingCategory.showCategories()
 
     }
