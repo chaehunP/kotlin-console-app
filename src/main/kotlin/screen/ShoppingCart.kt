@@ -50,6 +50,8 @@ class ShoppingCart : Screen() {
 
             else -> {
                 // TODO 재입력 요청
+                println("y 또는 n 둘 중 하나만 입력해주세요.")
+                showPreviousScreenOption()
             }
         }
     }
