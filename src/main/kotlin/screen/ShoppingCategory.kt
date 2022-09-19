@@ -17,11 +17,11 @@ class ShoppingCategory : Screen() {
         val selectedCategory = readLine().getNotEmptyString()
         if (selectedCategory == "#") {
             val shoppingCart = ShoppingCart()
-            shoppingCart.ShowCartItems()
+            shoppingCart.showCartItems()
         }else {
             if(categories.contains(selectedCategory)) {
-                val shoppingProductList = ShoppingProductList()  // 상품리스트 인스턴스 생성
-                shoppingProductList.showProducts(selectedCategory)
+                val shoppingProductList = ShoppingProductList(selectedCategory)  // 상품리스트 인스턴스 생성
+                shoppingProductList.showProducts()
             } else {
                 showErrorMesage(selectedCategory)
             }
