@@ -3,10 +3,11 @@ package screen
 import LINE_DIVIDER
 import data.CartItems
 
-class ShoppingCart {
+class ShoppingCart : Screen() {
     private val products = CartItems.products
 
     fun ShowCartItems() {
+        ScreenStack.push(this)
         if (products.isNotEmpty()) {
             println(
                 products.keys.joinToString( // products의 키에 따라 해당 상품의 수량을 표시

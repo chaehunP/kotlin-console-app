@@ -6,7 +6,7 @@ import data.Product
 import extensions.getNotEmptyInt
 import extensions.getNotEmptyString
 
-class ShoppingProductList {
+class ShoppingProductList : Screen() {
     private val product = arrayOf(
         Product("패션", "겨울 패딩"),  // Product 클래스를 배열로 인스턴스
         Product("패션", "겨울 바지"),
@@ -23,6 +23,7 @@ class ShoppingProductList {
     }
 
     fun showProducts(selectedCategory: String) {
+        ScreenStack.push(this) // showProducts 함수가 호출 되었을 때 이 화면에 진입했다고 생각
         val categoryProducts = categories[selectedCategory]
         if (!categoryProducts.isNullOrEmpty()) {
             println(

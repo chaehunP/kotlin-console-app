@@ -3,14 +3,9 @@ package screen
 import LINE_DIVIDER
 import extensions.getNotEmptyString
 
-/*
-Step 1. 장바구니에 추가한 상품 관리
-Step 2. 사용자 입력값 요청 처리 공통화
-Step 3. 프로젝트 전역에서 참조하는 상수
- */
-
-class ShoppingCategory {
+class ShoppingCategory : Screen() {
     fun showCategories() {
+        ScreenStack.push(this)
         val categories = arrayOf("패션", "전자기기", "반려동물 용품", "주방용품")
         for (category in categories) {
             print("          ")

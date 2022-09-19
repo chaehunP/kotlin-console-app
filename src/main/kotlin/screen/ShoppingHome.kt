@@ -3,18 +3,24 @@ package screen
 import LINE_DIVIDER
 import extensions.getNotEmptyString
 
-class ShoppingHome {
+/*
+Step 1. 화면 이동을 관리하는 Stack
+Step 2. 장바구니 이전화면 이동 구현
+ */
+
+class ShoppingHome : Screen() {
     fun start() {
         showWelcomeMessage()
         showCategories()
     }
 
     private fun showWelcomeMessage() {
+        ScreenStack.push(this) // showWelcomeMessage 함수가 호출 되었을 때 이 화면에 진입했다고 생각
         println("안녕하세요, Shoppi 에 오신 것을 환영합니다!")
         println("쇼핑을 계속 하시려면 이름을 입력해주세요 :) ")
         print("이름: ")
 
-        val name = readLine().getNotEmptyString()
+        val name = readLine().getNotEmptyString()  // readLine()는 nullable String이기 때문에 String? 형태인 getNotEmptyString() 사용 가능
         println(
             """
             
