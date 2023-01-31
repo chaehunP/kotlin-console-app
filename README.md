@@ -3,7 +3,7 @@
 사용 언어: <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>  
 사용 환경: <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat&logo=IntelliJ IDEA&logoColor=white"/>
 <br></br>
-#### udemy의 안드로이드 앱개발 부트캠프 강의를 들으며 kotlin 문법을 공부하면서 만든 shopping 관련 콘솔앱니다.
+#### udemy의 안드로이드 앱개발 부트캠프 강의를 들으며 kotlin 문법을 공부하면서 만든 shopping 관련 콘솔앱 입니다.
 
 >**주요 개념으로 전반적인 코틀린 기초 문법과 객체의 역할을 분리하여 가독성을 높이는 법, 싱글턴 객체 활용,   
 확장함수 구현, sealed class로 stack을 구현하는 법에 관해 공부했습니다.**    
