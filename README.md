@@ -1,4 +1,4 @@
-# shoppi-kotlin-console-app
+# Kotlin으로 만든 쇼핑 콘솔앱
 
 사용 언어: <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>  
 사용 환경: <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat&logo=IntelliJ IDEA&logoColor=white"/>
